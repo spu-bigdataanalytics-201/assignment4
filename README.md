@@ -18,6 +18,33 @@ TBD
 
 TBD
 
+After loading Spark, initating an instance of spark can be done as below.
+
+``` py
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+    .master("local[*]") \
+    .appName("Counting_Carriers") \
+    .getOrCreate()
+```
+### Tools to Use for Spark
+
+There are four ways of using spark. 
+
+- Using [Google Colab](https://colab.research.google.com/) **(Recommended)**
+- Using [Databricks](https://community.cloud.databricks.com/)
+- Install it on your own system, either using [dockers](http://docker.com/) or on your host system directly.
+- ~~Using Saint Peter's University Data Science Lab [Notebooks](https://dsl.saintpeters.edu:8443/).~~ *
+
+To make this part easy, you don't have to install it on your own computer. However, you will have to use all the other tools. 
+
+Databricks will work on the fly, you just need to create and account. SPU data science lab is similar to Databricks, after you log in, you will be able to create notebooks. For Google Colab, you have to run the following script first, in order to be able to use spark.
+
+Installing Spark on your local system is another option. You can install everything directly on your own computer, else you can utilize docker containers and make a docker compose to configure master and worker nodes. Check out this marvelous article on medium by [@marcovillarreal_40011](https://medium.com/@marcovillarreal_40011) on how to [create a spark standalone cluster with Docker and docker-compose](https://medium.com/@marcovillarreal_40011/creating-a-spark-standalone-cluster-with-docker-and-docker-compose-ba9d743a157f). You can try `docker-compose` to build your own standalone spark instance.
+
+<sub>Not available due to COVID 19 and VPN restrictions.</sub>
+
 ### About the Dataset
 
 The data consists of flight arrival and departure details for all commercial flights within the USA, from October 1987 to April 2008.
