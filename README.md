@@ -151,6 +151,16 @@ Follow below instructions to set up your assignment repository.
 - [ ] Create a folder named as `data` in this directory. Put the data files in this folder.
 - [ ] Load the entire dataset into a DataFrame.
 
+### EDA
+
+Not *required*, but can you do the following in Spark?
+
+- [ ] Create a new field of timestamp using the columns Year, Month, DayofMonth, DayOfWeek, DepTime, and CRSDepTime. Note that CRSDepTime is in HHMM format.
+- [ ] How many rows does you dataset have?
+- [ ] How many flights that are not cancelled were taken?
+- [ ] What is the average departure delay from each airport?
+- [ ] What day the delays are the worst?
+
 ### MapReduce 
 
 Use map-reduce algorithm to find out the results of the following questions.
