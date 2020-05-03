@@ -1,5 +1,7 @@
 # Assignment4 - Introduction to Spark
 
+![assets/carbon](assets/carbon.png)
+
 Hi!
 
 In this repository, we will get our hand's dirty with Spark. 
